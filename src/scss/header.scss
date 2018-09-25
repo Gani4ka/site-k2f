@@ -19,6 +19,10 @@ list-style: none;
 border: 1px solid transparent;
 border-radius: calculateRem(4px);
 
+  &--lighted {
+    background-color: rgba(0, 198, 322, .5);
+  }
+
   &:hover {
     background-color: rgba(0, 198, 322, .5);
     
@@ -62,7 +66,10 @@ border-radius: calculateRem(4px);
 }
 
 .buttons-container {
-  text-align: end;
+  position: absolute; 
+  right: 0;
+  top: 0;
+  // text-align: end;
 }
 
 .button {

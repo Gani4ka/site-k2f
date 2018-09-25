@@ -464,15 +464,15 @@ button {
 
 .baner-wrapper {
   width: 100%;
-  height: 100vh;
-  background-image: url(../img/main1.jpg);
-  background-size: cover;
+  background-image: url(../img/banner.jpg);
+  background-size: contein;
   background-repeat: no-repeat;
 }
 
 .page-wrapper {
   width: 75rem;
   margin: 0 auto;
+  position: relative;
 }
 
 .main {
@@ -546,6 +546,10 @@ button {
   border-radius: 0.25rem;
 }
 
+.menu-item--lighted {
+  background-color: rgba(0, 198, 255, 0.5);
+}
+
 .menu-item:hover {
   background-color: rgba(0, 198, 255, 0.5);
 }
@@ -587,7 +591,9 @@ button {
 }
 
 .buttons-container {
-  text-align: end;
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 
 .button {

@@ -17,15 +17,16 @@ time, mark, audio, video, input, button {
 
 .baner-wrapper {
   width: 100%;
-  height: 100vh;
-  background-image: url(../img/main1.jpg);
-  background-size: cover;
+  // height: 100vh;
+  background-image: url(../img/banner.jpg);
+  background-size: contein;
   background-repeat: no-repeat;
 }
 
 .page-wrapper {
   width: calculateRem(1200px);
   margin: 0 auto;
+  position: relative;
 }
 
 .main {
