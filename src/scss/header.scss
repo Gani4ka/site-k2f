@@ -1,0 +1,98 @@
+.header {
+  // display: flex;
+  // justify-content: space-between;
+  padding: calculateRem(20px) calculateRem(50px);
+  background-color: rgba(141, 130, 110, .5);
+
+  &__navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.menu-item {
+display: inline-block;
+margin-right: calculateRem(25px);
+padding: calculateRem(5px) calculateRem(5px);
+list-style: none;
+border: 1px solid transparent;
+border-radius: calculateRem(4px);
+
+  &:hover {
+    background-color: rgba(0, 198, 322, .5);
+    
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &__link {
+    font-family: sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #333;
+  }
+}
+
+.contacts {
+  font-family: sans-serif;
+  color: #333;
+
+  &__item {
+    padding: calculateRem(5px) calculateRem(0px);
+
+    &--viber {
+      position: relative;
+
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        right: calculateRem(-20px);
+        top: calculateRem(3px);
+        width: calculateRem(20px);
+        height: calculateRem(20px);
+        background-image: url(../img/viber.svg);
+        background-size: contain;
+      }
+    }
+  }
+}
+
+.buttons-container {
+  text-align: end;
+}
+
+.button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  background-repeat: no-repeat;
+
+  &--cart {
+    height: calculateRem(35px);
+    width: calculateRem(35px);
+    margin-right: 40px;
+    background-color: transparent;
+    background-image: url(../img/cart.svg);
+    background-size: contain;
+  }
+
+  &-lang {
+    height: calculateRem(25px);
+    width: calculateRem(40px);
+    background-size: cover;
+    background-position: center;
+
+    &--ukr {
+      background-image: url(../img/Ukraine.png);
+    }
+
+    &--rus {
+      background-image: url(../img/Russia.png);
+    }
+  }
+}
